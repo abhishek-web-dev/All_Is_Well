@@ -20,21 +20,35 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* :root { 
+  --background-color: #ffffff; Background color for the entire website, including individual sections
+  --default-color: #363f40; Default color used for the majority of the text content across the entire website
+  --heading-color: #1f2f31; Color for headings, subheadings and title throughout the website
+  --accent-color: #099aa7; Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out
+  --surface-color: #ffffff; The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background.
+  --contrast-color: #ffffff; Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors.
+} */
+
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #363f40; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #1f2f31; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #099aa7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff;
+  --default-color: #363f40;
+  --heading-color: #1f2f31;
+
+  /* Logo Green Color */
+  --accent-color: #8ABE38;
+
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #363f40;  /* The default color of the main navmenu links */
-  --nav-hover-color: #099aa7; /* Applied to main navmenu links when they are hovered over or active */
+  /* --nav-hover-color: #099aa7; Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #8ABE38;
+  --nav-dropdown-hover-color: #8ABE38;
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  /* --nav-dropdown-background-color: #ffffff; Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #363f40; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #099aa7; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -54,6 +68,16 @@
   --contrast-color: #ffffff;
 }
 
+/* .service-item{
+  background:#439ED9;
+  border:1px solid #c7dff3;
+}
+
+.service-item:hover{
+  background:#d4e8f8;
+  transform:translateY(-5px);
+  transition:0.3s;
+} */
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -152,6 +176,13 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
 }
+
+/* .header {
+  background: linear-gradient(90deg, #4B892B, #6FAF3B, #8ABE38);
+  padding: 0;
+  transition: all 0.5s;
+  z-index: 997;
+} */
 
 .header .logo {
   line-height: 1;
@@ -456,9 +487,16 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+/* .footer {
+   color: var(--default-color); 
+  background-color: var(--background-color); 
+  font-size: 14px;
+  position: relative; 
+} */
+
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+   background-color: #092243;
+  color: #ffffff;
   font-size: 14px;
   position: relative;
 }
@@ -468,7 +506,7 @@ h6 {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.footer .footer-about .logo {
+.footer .footer-about .logo { 
   line-height: 1;
   margin-bottom: -15px;
 }
@@ -492,15 +530,17 @@ h6 {
 }
 
 .footer .social-links a {
+  color: #ffffff;
+  border: 1px solid #ffffff40;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  /* border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%); */
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 20%); */
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -515,8 +555,12 @@ h6 {
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
+  color:#ffffff;
 }
 
+.footer p{
+  color:#cfe6ff;
+}
 .footer .footer-links {
   margin-bottom: 30px;
 }
@@ -544,7 +588,7 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #cfe6ff;
   display: inline-block;
   line-height: 1;
 }
