@@ -6468,3 +6468,94 @@ section,
   padding-bottom: 60px;
   /* Add your styles here */
 }
+
+/* .guarantee-img{
+width:260px;
+margin-top:15px;
+transition: all 0.4s ease;
+cursor:pointer;
+background:transparent;
+animation: pulseBadge 3s infinite;
+} */
+
+.guarantee-img{
+width:260px;
+margin-top:15px;
+transition: all 0.4s ease;
+cursor:pointer;
+background:transparent;
+animation: pulseBadge 3s infinite;
+will-change: transform;
+}
+
+/* Hover Animation */
+
+.guarantee-img:hover{
+transform: scale(1.1) rotate(3deg);
+box-shadow: 0 0 40px rgba(138,190,56,0.6);
+}
+
+/* Pulse Animation */
+
+@keyframes pulseBadge{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
+
+.awards-section{
+padding:80px 0;
+background:#f7f7f7;
+text-align:center;
+overflow:hidden;
+}
+
+.award-title{
+font-size:34px;
+font-weight:700;
+margin-bottom:40px;
+}
+
+.award-slider{
+display:flex;
+gap:30px;
+animation:scroll 25s linear infinite;
+width:max-content;
+}
+
+.award-card{
+background:white;
+padding:20px;
+border-radius:12px;
+width:370px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.award-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.award-card h4{
+font-size:18px;
+margin:5px 0;
+}
+
+.award-card p{
+font-size:14px;
+color:#777;
+}
+
+@keyframes scroll{
+0%{
+transform: translateX(0);
+}
+
+100%{
+transform: translateX(-50%);
+}
+}
