@@ -711,6 +711,7 @@ h6 {
   background-color: var(--background-color);
   position: relative;
   padding-top: 100px;
+  
 }
 
 .page-title .heading {
@@ -6642,3 +6643,5 @@ transform:scale(1.05);
 .award-card p {
   text-transform: uppercase;
 }
+
+
